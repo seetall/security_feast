@@ -1,0 +1,111 @@
+/* General styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #eef2f3; /* Soft background color */
+}
+
+/* Payment card layout */
+.payment-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff; /* White background for the card */
+  border-radius: 20px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+  padding: 30px;
+  margin: 30px auto;
+  max-width: 1100px;
+  width: 90%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.payment-card:hover {
+  transform: translateY(-10px); /* Lift the card when hovered */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15); /* Stronger shadow effect */
+}
+
+/* Product content section */
+.product-image img {
+  height: auto;
+  width: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+/* Product details styling */
+.product-details {
+  margin-top: 20px;
+  max-width: 80%;
+  text-align: center;
+}
+
+.product-details h2 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.product-details .description {
+  color: #777;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.product-details .price {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ff5722; /* Orange color for the price */
+}
+
+/* Payment info section */
+.payment-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Button styling */
+.button {
+  background-color: #ff5722; /* Vibrant orange button */
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 20px;
+}
+
+.button:hover {
+  background-color: #e64a19; /* Darker orange on hover */
+  transform: translateY(-3px); /* Slight lift effect on hover */
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+  .payment-card {
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .product-details {
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .payment-info {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+  }
+}
