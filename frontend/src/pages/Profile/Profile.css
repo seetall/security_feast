@@ -1,0 +1,123 @@
+/* General styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Light gray background */
+}
+
+
+
+/* Profile styles */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Minimum height of the viewport */
+    background-color: #f8f9fa; /* Light gray background */
+}
+
+.card.profile {
+    width: 100%;
+    max-width: 600px; /* Limit the width of the card */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.profile-picture {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+.profile-info {
+    flex-grow: 1;
+}
+
+.profile-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.profile-email {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #999;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.close-button:hover {
+    color: #333; /* Darker color on hover */
+}
+
+.mb-3 label {
+    display: block; /* Ensure labels are displayed as block elements */
+    font-weight:500; /* Make labels bold */
+    margin-bottom: 0.5rem; /* Add some space below the labels */
+    text-align: start; /* Align labels to the start (left) */
+}
+
+
+.mb-3 input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.mb-3 input:focus {
+    outline: none;
+    border-color: #007bff; /* Blue focus color */
+}
+
+.mb-3 .form-label {
+    text-align: left; /* Align form labels to the left */
+    margin-bottom: 0.5rem; /* Add some space below the labels */
+}
+
+.alert {
+    background-color: #f8d7da; /* Light red background for error */
+    color: #721c24; /* Dark red text color */
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.alert-success {
+    background-color: #d4edda; /* Light green background for success */
+    color: #155724; /* Dark green text color */
+}
+
+.btn {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
