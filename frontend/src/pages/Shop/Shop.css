@@ -1,0 +1,126 @@
+/* Product List Grid Layout */
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+  gap: 20px; /* Equal gap between cards */
+  margin-top: 20px;
+  grid-auto-rows: 1fr; /* Ensures rows are of equal height */
+}
+
+/* Product Card */
+.product-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 380px; /* Fixed height to ensure cards are the same size */
+}
+
+/* Product Card Hover Animation */
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Product Image */
+.product-card img {
+  width: 100%;
+  height: 200px; /* Fixed height for the image */
+  object-fit: cover; /* Ensures the image is cropped properly */
+  transition: transform 0.3s ease;
+}
+
+/* Image Zoom Effect on Hover */
+.product-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Product Info */
+.product-info {
+  padding: 10px;
+  text-align: center;
+  flex-grow: 1;
+}
+
+/* Product Title */
+.product-info h3 {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+/* Product Price */
+.price {
+  font-size: 14px;
+  color: #e67e22;
+  font-weight: bold;
+}
+
+/* Product Buttons Layout */
+.product-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Buy Now Button */
+.buy-now {
+  background-color: #ff5733;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buy-now:hover {
+  background-color: #e84f28;
+}
+
+/* Add to Favorites Button */
+.add-to-favorites {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+}
+
+.add-to-favorites:hover {
+  background-color: #c0392b;
+}
+
+/* Pagination Styles */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 10px 15px;
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.pagination button.active {
+  background-color: #f39c12;
+  color: white;
+}
+
+.pagination button:hover {
+  background-color: #e67e22;
+  color: white;
+}
