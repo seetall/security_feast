@@ -1,0 +1,92 @@
+/* Overall page styling */
+.favorites-page {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.favorites-page h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Styling for the list of favorite items */
+.favorites-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.favorites-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.favorites-item img {
+  width: 100px;
+  height: auto;
+  margin-right: 15px;
+}
+
+.favorites-item-info {
+  flex: 1;
+}
+
+.favorites-item-info h3 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.favorites-item-info .price {
+  color: #333;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.remove-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.remove-btn svg {
+  margin-right: 5px;
+}
+
+.remove-btn:hover {
+  background-color: #ff1a1a;
+}
+
+/* Summary section styling */
+.favorites-summary {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.favorites-summary p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.clear-favorites {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.clear-favorites:hover {
+  background-color: #0056b3;
+}
