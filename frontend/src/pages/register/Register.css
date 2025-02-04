@@ -1,0 +1,32 @@
+/* Center the register box */
+.register-box {
+  width: 800px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+}
+
+/* Image Styling */
+.register-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Orange Button */
+.btn-orange {
+  background-color: #ff7f00 !important;
+  border-color: #ff7f00 !important;
+  color: white !important;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.btn-orange:hover {
+  background-color: #e66a00 !important;
+  border-color: #e66a00 !important;
+  color: white !important;
+}
